@@ -1,0 +1,18 @@
+<html>
+<head>
+	<script type="text/javascript" src="kc85-player.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	function play_noise() {
+		noise = Array.from({length: 1024}, () => Math.floor(Math.random() * 255));
+		player = new KC85Player(noise)
+		player.play()		
+	}
+</script>
+
+<h1>Playing 1kByte noise data:</h1>
+<button onclick="play_noise()">PLAY!</button>
+
+</body>
+</html>
