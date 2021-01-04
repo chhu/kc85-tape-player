@@ -25,7 +25,7 @@ class KC85Player {
 		this.raw_data = raw_data
 		this.config = Object.assign({}, KC85Config.default);
 		this.config = Object.assign(this.config, KC85Config[config_key]);
-		this.ac = new AudioContext()
+		this.ac = new (window.AudioContext || window.webkitAudioContext)()
 		this.sample_rate = this.ac.sampleRate
 		this.audio = this.ac.createBuffer(1, this.sample_rate * ((raw_data.length / 128) * 1.2 + 10), this.sample_rate)
 		this.duration = this.audio.duration
