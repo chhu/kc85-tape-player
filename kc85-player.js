@@ -97,16 +97,24 @@ class KC85Player {
 		this.add_stop()
 	}
 
+	stop_play() {
+		if (window.asource) {
+			window.asource.stop()
+			window.asource.disconnect()
+		}
+	}
+
 	play() {
+		this.stop_play()
 		// Get an AudioBufferSourceNode.
 		// This is the AudioNode to use when we want to play an AudioBuffer
-		var source = this.ac.createBufferSource();
+		window.asource = this.ac.createBufferSource();
 		// set the buffer in the AudioBufferSourceNode
-		source.buffer = this.audio;
+		window.asource.buffer = this.audio;
 		// connect the AudioBufferSourceNode to the
 		// destination so we can hear the sound
-		source.connect(this.ac.destination);
+		window.asource.connect(this.ac.destination);
 		// start the source playing
-		source.start();
+		window.asource.start();
 	}
 }

@@ -1,28 +1,26 @@
 <html>
 <head>
 	<script type="text/javascript" src="kc85-player.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body {
+			background:black;
+			font-family: 'Courier Prime', monospace;
+			color: limegreen;
+		}
+		button {
+			font-family: 'Courier Prime', monospace;
+			font-size: 18px;
+		}
+		p {
+			font-size: 18px;
+
+		}
+	</style>
 </head>
 <body>
 <script type="text/javascript">
-/*
-async function (url = '', data = {}) {
-  // Default options are marked with *
-  const response = await fetch(url, {
-    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-    mode: 'cors', // no-cors, *cors, same-origin
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'same-origin', // include, *same-origin, omit
-    headers: {
-      'Content-Type': 'application/json'
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    redirect: 'follow', // manual, *follow, error
-    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    body: JSON.stringify(data) // body data type must match "Content-Type" header
-  });
-  return response.json(); // parses JSON response into native JavaScript objects
-}
-*/
 function play_file(url) {
 	return fetch(url).then(function(response) {
         if (!response.ok) {
@@ -37,8 +35,400 @@ function play_file(url) {
 }
 </script>
 
-<h1>Playing BOULD_3.KCC:</h1>
-<button onclick="play_file('tapes/BOULD_3.KCC')">PLAY!</button>
+<h1 style="color: white">KC85 Tapes <button onclick="asource.stop()">STOP Playback</button></h1>
+<div>Only KCC work right now. Others follow soon. Connect audio out of your mobile to tape-in at KC85, play with the volume to get it right. For iPhone enable WebAudio in experimental settings of Safari.</div>
+<hr/>
+<p>17+4.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/17+4.SSS')">PLAY!</button></p><hr/>')">PLAY!</button></p><hr/>
+<p>3D-FUNC3.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/3D-FUNC3.SSS')">PLAY!</button></p><hr/>
+<p>4gewinnt.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/4gewinnt.kcc')">PLAY!</button></p><hr/>
+<p>ABENTEU.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ABENTEU.KCC')">PLAY!</button></p><hr/>
+<p>ACTION-3.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ACTION-3.SSS')">PLAY!</button></p><hr/>
+<p>ADVENTUR.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ADVENTUR.KCC')">PLAY!</button></p><hr/>
+<p>AEGYPTEN.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/AEGYPTEN.KCC')">PLAY!</button></p><hr/>
+<p>AIRRAID.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/AIRRAID.853')">PLAY!</button></p><hr/>
+<p>AIRRAID+.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/AIRRAID+.KCC')">PLAY!</button></p><hr/>
+<p>AIRRAID.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/AIRRAID.KCC')">PLAY!</button></p><hr/>
+<p>ALF.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ALF.853')">PLAY!</button></p><hr/>
+<p>ALI2.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ALI2.TAP')">PLAY!</button></p><hr/>
+<p>ALLIENS.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ALLIENS.KCC')">PLAY!</button></p><hr/>
+<p>ALZAN.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ALZAN.SSS')">PLAY!</button></p><hr/>
+<p>Anaborea.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Anaborea.tap')">PLAY!</button></p><hr/>
+<p>ANACOND2.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ANACOND2.TAP')">PLAY!</button></p><hr/>
+<p>ANACONDA.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ANACONDA.TAP')">PLAY!</button></p><hr/>
+<p>ANDANTE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ANDANTE.KCC')">PLAY!</button></p><hr/>
+<p>ANGELN1O.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ANGELN1O.TAP')">PLAY!</button></p><hr/>
+<p>ANIMA3-3.BIL&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ANIMA3-3.BIL')">PLAY!</button></p><hr/>
+<p>APOLLO.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/APOLLO.SSS')">PLAY!</button></p><hr/>
+<p>ARCHIV.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ARCHIV.KCC')">PLAY!</button></p><hr/>
+<p>ASTRAY.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ASTRAY.SSS')">PLAY!</button></p><hr/>
+<p>ASTRAY.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ASTRAY.TAP')">PLAY!</button></p><hr/>
+<p>ASTRAY-V.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ASTRAY-V.SSS')">PLAY!</button></p><hr/>
+<p>ATTACK.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ATTACK.TAP')">PLAY!</button></p><hr/>
+<p>AUTO1.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/AUTO1.KCC')">PLAY!</button></p><hr/>
+<p>AUTO4.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/AUTO4.TAP')">PLAY!</button></p><hr/>
+<p>AUTO.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/AUTO.KCC')">PLAY!</button></p><hr/>
+<p>Babylon.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Babylon.kcc')">PLAY!</button></p><hr/>
+<p>BAC853C.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BAC853C.SSS')">PLAY!</button></p><hr/>
+<p>BAC853.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BAC853.SSS')">PLAY!</button></p><hr/>
+<p>BAGAMMON.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BAGAMMON.KCC')">PLAY!</button></p><hr/>
+<p>BAS-G2-0.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BAS-G2-0.KCC')">PLAY!</button></p><hr/>
+<p>bd2010.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/bd2010.kcc')">PLAY!</button></p><hr/>
+<p>BELLUM.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BELLUM.KCC')">PLAY!</button></p><hr/>
+<p>BELLUM.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BELLUM.TAP')">PLAY!</button></p><hr/>
+<p>BENNION3_mod.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BENNION3_mod.TAP')">PLAY!</button></p><hr/>
+<p>BENNION4_mod.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BENNION4_mod.TAP')">PLAY!</button></p><hr/>
+<p>BENNION.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BENNION.KCC')">PLAY!</button></p><hr/>
+<p>BERGWERK.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BERGWERK.853')">PLAY!</button></p><hr/>
+<p>BERGWERK.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BERGWERK.SSS')">PLAY!</button></p><hr/>
+<p>BIG-FUN.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BIG-FUN.KCC')">PLAY!</button></p><hr/>
+<p>BIG-TURN.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BIG-TURN.KCC')">PLAY!</button></p><hr/>
+<p>BIGTURN.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BIGTURN.TAP')">PLAY!</button></p><hr/>
+<p>BOHRTURM.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOHRTURM.TAP')">PLAY!</button></p><hr/>
+<p>BOMBERSP.KCB&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOMBERSP.KCB')">PLAY!</button></p><hr/>
+<p>BOMBER.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOMBER.SSS')">PLAY!</button></p><hr/>
+<p>BOMBJACK.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOMBJACK.TAP')">PLAY!</button></p><hr/>
+<p>BOMBS.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOMBS.KCC')">PLAY!</button></p><hr/>
+<p>BOMBSWEE.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOMBSWEE.853')">PLAY!</button></p><hr/>
+<p>BOULD3-1.PIC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOULD3-1.PIC')">PLAY!</button></p><hr/>
+<p>BOULD3-2.PIC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOULD3-2.PIC')">PLAY!</button></p><hr/>
+<p>BOULD3-3.PIC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOULD3-3.PIC')">PLAY!</button></p><hr/>
+<p>BOULD-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOULD-3.KCC')">PLAY!</button></p><hr/>
+<p>BOULD_3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOULD_3.KCC')">PLAY!</button></p><hr/>
+<p>BOULDERD_mod.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOULDERD_mod.853')">PLAY!</button></p><hr/>
+<p>BOULDERK_mod.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BOULDERK_mod.TAP')">PLAY!</button></p><hr/>
+<p>BREAKIN.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BREAKIN.853')">PLAY!</button></p><hr/>
+<p>BREAKOUT.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BREAKOUT.853')">PLAY!</button></p><hr/>
+<p>BREAKOUT.855&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BREAKOUT.855')">PLAY!</button></p><hr/>
+<p>BREAKOUT.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BREAKOUT.KCC')">PLAY!</button></p><hr/>
+<p>BS-UVS.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BS-UVS.TAP')">PLAY!</button></p><hr/>
+<p>BTOOLS-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BTOOLS-3.KCC')">PLAY!</button></p><hr/>
+<p>BURG.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BURG.SSS')">PLAY!</button></p><hr/>
+<p>BUSTLE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BUSTLE.KCC')">PLAY!</button></p><hr/>
+<p>BUSTLE.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BUSTLE.TAP')">PLAY!</button></p><hr/>
+<p>BUSY.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BUSY.KCC')">PLAY!</button></p><hr/>
+<p>BUSYMOL3.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BUSYMOL3.853')">PLAY!</button></p><hr/>
+<p>BUSYMOLE.855&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/BUSYMOLE.855')">PLAY!</button></p><hr/>
+<p>CALC.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CALC.SSS')">PLAY!</button></p><hr/>
+<p>CAOS-DEV.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CAOS-DEV.KCC')">PLAY!</button></p><hr/>
+<p>CAOSNEU.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CAOSNEU.KCC')">PLAY!</button></p><hr/>
+<p>CASTLE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CASTLE.KCC')">PLAY!</button></p><hr/>
+<p>CASTLE.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CASTLE.TAP')">PLAY!</button></p><hr/>
+<p>Cave2.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Cave2.853')">PLAY!</button></p><hr/>
+<p>CAVE.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CAVE.853')">PLAY!</button></p><hr/>
+<p>CAVEBAS.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CAVEBAS.TAP')">PLAY!</button></p><hr/>
+<p>CAVEGROS.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CAVEGROS.KCC')">PLAY!</button></p><hr/>
+<p>CAVERN2.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CAVERN2.TAP')">PLAY!</button></p><hr/>
+<p>CENTIPED.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CENTIPED.853')">PLAY!</button></p><hr/>
+<p>CENTIPED.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CENTIPED.KCC')">PLAY!</button></p><hr/>
+<p>CHDIGG-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CHDIGG-3.KCC')">PLAY!</button></p><hr/>
+<p>CHESS.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CHESS.KCC')">PLAY!</button></p><hr/>
+<p>CLIMBER.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CLIMBER.TAP')">PLAY!</button></p><hr/>
+<p>CLUB-X.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/CLUB-X.TAP')">PLAY!</button></p><hr/>
+<p>COAL.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/COAL.TAP')">PLAY!</button></p><hr/>
+<p>COCKPIT.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/COCKPIT.853')">PLAY!</button></p><hr/>
+<p>COPY3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/COPY3.KCC')">PLAY!</button></p><hr/>
+<p>DAME-SP.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DAME-SP.SSS')">PLAY!</button></p><hr/>
+<p>DANGERKC.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DANGERKC.TAP')">PLAY!</button></p><hr/>
+<p>DELIRO4_MOD.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DELIRO4_MOD.TAP')">PLAY!</button></p><hr/>
+<p>DELIRO.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DELIRO.KCC')">PLAY!</button></p><hr/>
+<p>DIAMANT.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DIAMANT.853')">PLAY!</button></p><hr/>
+<p>DIAMANT.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DIAMANT.KCC')">PLAY!</button></p><hr/>
+<p>DIAMANT.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DIAMANT.TAP')">PLAY!</button></p><hr/>
+<p>DIGGER-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DIGGER-3.KCC')">PLAY!</button></p><hr/>
+<p>DIGGER3N.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DIGGER3N.KCC')">PLAY!</button></p><hr/>
+<p>DIGGER.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DIGGER.853')">PLAY!</button></p><hr/>
+<p>DIGGERH.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DIGGERH.TAP')">PLAY!</button></p><hr/>
+<p>DIGGER+.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DIGGER+.KCC')">PLAY!</button></p><hr/>
+<p>DIRCASS.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DIRCASS.KCC')">PLAY!</button></p><hr/>
+<p>DRAISINE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DRAISINE.KCC')">PLAY!</button></p><hr/>
+<p>DRAISINE.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DRAISINE.TAP')">PLAY!</button></p><hr/>
+<p>DUESENKA.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/DUESENKA.TAP')">PLAY!</button></p><hr/>
+<p>EARTH.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/EARTH.KCC')">PLAY!</button></p><hr/>
+<p>EARTH.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/EARTH.TAP')">PLAY!</button></p><hr/>
+<p>EDIPIC33.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/EDIPIC33.KCC')">PLAY!</button></p><hr/>
+<p>EGON.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/EGON.TAP')">PLAY!</button></p><hr/>
+<p>EIER.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/EIER.KCC')">PLAY!</button></p><hr/>
+<p>EIGAL.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/EIGAL.KCC')">PLAY!</button></p><hr/>
+<p>EIS.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/EIS.TAP')">PLAY!</button></p><hr/>
+<p>ENTEN2.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ENTEN2.TAP')">PLAY!</button></p><hr/>
+<p>Enterprise.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Enterprise.kcc')">PLAY!</button></p><hr/>
+<p>ENTERPR.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ENTERPR.TAP')">PLAY!</button></p><hr/>
+<p>EP33+HP.OVR&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/EP33+HP.OVR')">PLAY!</button></p><hr/>
+<p>ERDANI-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ERDANI-3.KCC')">PLAY!</button></p><hr/>
+<p>ESCAPE11.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ESCAPE11.TAP')">PLAY!</button></p><hr/>
+<p>Eule.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Eule.kcc')">PLAY!</button></p><hr/>
+<p>FALCON.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/FALCON.TAP')">PLAY!</button></p><hr/>
+<p>FIREWURM.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/FIREWURM.TAP')">PLAY!</button></p><hr/>
+<p>FLATTER.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/FLATTER.853')">PLAY!</button></p><hr/>
+<p>FLATTER.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/FLATTER.KCC')">PLAY!</button></p><hr/>
+<p>FLIPPER.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/FLIPPER.KCC')">PLAY!</button></p><hr/>
+<p>FLIPPER.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/FLIPPER.TAP')">PLAY!</button></p><hr/>
+<p>FORMEL1.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/FORMEL1.KCC')">PLAY!</button></p><hr/>
+<p>FRANKENS.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/FRANKENS.TAP')">PLAY!</button></p><hr/>
+<p>FROSCH.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/FROSCH.TAP')">PLAY!</button></p><hr/>
+<p>FRUTTI.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/FRUTTI.853')">PLAY!</button></p><hr/>
+<p>FRUTTI.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/FRUTTI.TAP')">PLAY!</button></p><hr/>
+<p>FYA-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/FYA-3.KCC')">PLAY!</button></p><hr/>
+<p>GALAXIE.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GALAXIE.TAP')">PLAY!</button></p><hr/>
+<p>GARTEN.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GARTEN.SSS')">PLAY!</button></p><hr/>
+<p>GATECRAS.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GATECRAS.853')">PLAY!</button></p><hr/>
+<p>GATECR.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GATECR.TAP')">PLAY!</button></p><hr/>
+<p>GATE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GATE.KCC')">PLAY!</button></p><hr/>
+<p>GEISTERF.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GEISTERF.KCC')">PLAY!</button></p><hr/>
+<p>GEISTERF_MOD.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GEISTERF_MOD.853')">PLAY!</button></p><hr/>
+<p>GEO-DDR.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GEO-DDR.SSS')">PLAY!</button></p><hr/>
+<p>GEPPY.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GEPPY.KCC')">PLAY!</button></p><hr/>
+<p>GHOST.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GHOST.TAP')">PLAY!</button></p><hr/>
+<p>GMASTER3.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GMASTER3.SSS')">PLAY!</button></p><hr/>
+<p>GOFF_3_mod.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GOFF_3_mod.tap')">PLAY!</button></p><hr/>
+<p>GOFF_4_mod.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GOFF_4_mod.tap')">PLAY!</button></p><hr/>
+<p>GOFF.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GOFF.KCC')">PLAY!</button></p><hr/>
+<p>GOLD90.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GOLD90.TAP')">PLAY!</button></p><hr/>
+<p>GOLDRUSH.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GOLDRUSH.KCC')">PLAY!</button></p><hr/>
+<p>GOURMAND.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GOURMAND.TAP')">PLAY!</button></p><hr/>
+<p>GRAFDEMO.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GRAFDEMO.SSS')">PLAY!</button></p><hr/>
+<p>GRAFED.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GRAFED.KCC')">PLAY!</button></p><hr/>
+<p>GRAFIK0.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GRAFIK0.KCC')">PLAY!</button></p><hr/>
+<p>GRAFIK1.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GRAFIK1.KCC')">PLAY!</button></p><hr/>
+<p>GRAFIK2.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GRAFIK2.KCC')">PLAY!</button></p><hr/>
+<p>GRAFIK3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GRAFIK3.KCC')">PLAY!</button></p><hr/>
+<p>GRAFIK.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GRAFIK.KCC')">PLAY!</button></p><hr/>
+<p>GROSS.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GROSS.KCC')">PLAY!</button></p><hr/>
+<p>GR-PRIX.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GR-PRIX.SSS')">PLAY!</button></p><hr/>
+<p>Gunship_3000.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Gunship_3000.kcc')">PLAY!</button></p><hr/>
+<p>GUNSHIP.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/GUNSHIP.KCC')">PLAY!</button></p><hr/>
+<p>HALLO-3.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HALLO-3.SSS')">PLAY!</button></p><hr/>
+<p>HASEWOLF.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HASEWOLF.853')">PLAY!</button></p><hr/>
+<p>HASEWOLF.855&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HASEWOLF.855')">PLAY!</button></p><hr/>
+<p>HASEWOLF.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HASEWOLF.KCC')">PLAY!</button></p><hr/>
+<p>HAWO-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HAWO-3.KCC')">PLAY!</button></p><hr/>
+<p>HAWO-3.OVR&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HAWO-3.OVR')">PLAY!</button></p><hr/>
+<p>HAWO-3.PIC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HAWO-3.PIC')">PLAY!</button></p><hr/>
+<p>HC-TKAPW.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HC-TKAPW.KCC')">PLAY!</button></p><hr/>
+<p>HEIGAMES.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HEIGAMES.SSS')">PLAY!</button></p><hr/>
+<p>HELI4.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HELI4.TAP')">PLAY!</button></p><hr/>
+<p>HELICOPT.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HELICOPT.853')">PLAY!</button></p><hr/>
+<p>HELI.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HELI.KCC')">PLAY!</button></p><hr/>
+<p>HEX-DEZ.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HEX-DEZ.KCC')">PLAY!</button></p><hr/>
+<p>HEXO3F-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HEXO3F-3.KCC')">PLAY!</button></p><hr/>
+<p>HEXO7F-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HEXO7F-3.KCC')">PLAY!</button></p><hr/>
+<p>HIBI.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HIBI.KCC')">PLAY!</button></p><hr/>
+<p>HIBI.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HIBI.TAP')">PLAY!</button></p><hr/>
+<p>HIT.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HIT.TAP')">PLAY!</button></p><hr/>
+<p>House.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/House.853')">PLAY!</button></p><hr/>
+<p>HOUSE+.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HOUSE+.KCC')">PLAY!</button></p><hr/>
+<p>HOUSE.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/HOUSE.TAP')">PLAY!</button></p><hr/>
+<p>Invaders.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Invaders.kcc')">PLAY!</button></p><hr/>
+<p>INVADERS.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/INVADERS.KCC')">PLAY!</button></p><hr/>
+<p>JACK.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/JACK.KCC')">PLAY!</button></p><hr/>
+<p>JAEGER.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/JAEGER.KCC')">PLAY!</button></p><hr/>
+<p>JAEGER.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/JAEGER.TAP')">PLAY!</button></p><hr/>
+<p>JUNGLE4.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/JUNGLE4.TAP')">PLAY!</button></p><hr/>
+<p>JUNGLE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/JUNGLE.KCC')">PLAY!</button></p><hr/>
+<p>JUWEL.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/JUWEL.KCC')">PLAY!</button></p><hr/>
+<p>KARATE.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/KARATE.TAP')">PLAY!</button></p><hr/>
+<p>KC-4SYS.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/KC-4SYS.KCC')">PLAY!</button></p><hr/>
+<p>KCCHECK.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/KCCHECK.KCC')">PLAY!</button></p><hr/>
+<p>KCLADDER.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/KCLADDER.TAP')">PLAY!</button></p><hr/>
+<p>KEX3.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/KEX3.853')">PLAY!</button></p><hr/>
+<p>KEX4.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/KEX4.TAP')">PLAY!</button></p><hr/>
+<p>KEX.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/KEX.KCC')">PLAY!</button></p><hr/>
+<p>KISTE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/KISTE.KCC')">PLAY!</button></p><hr/>
+<p>Knacki.sss&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Knacki.sss')">PLAY!</button></p><hr/>
+<p>Koenig_mod.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Koenig_mod.kcc')">PLAY!</button></p><hr/>
+<p>LABY2.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/LABY2.KCC')">PLAY!</button></p><hr/>
+<p>LABYRINT.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/LABYRINT.853')">PLAY!</button></p><hr/>
+<p>LABYRINT.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/LABYRINT.KCC')">PLAY!</button></p><hr/>
+<p>LADDER-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/LADDER-3.KCC')">PLAY!</button></p><hr/>
+<p>LADDER.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/LADDER.853')">PLAY!</button></p><hr/>
+<p>LADDER.855&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/LADDER.855')">PLAY!</button></p><hr/>
+<p>Ladder_v2.0.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Ladder_v2.0.kcc')">PLAY!</button></p><hr/>
+<p>LETTER.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/LETTER.SSS')">PLAY!</button></p><hr/>
+<p>LIED.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/LIED.SSS')">PLAY!</button></p><hr/>
+<p>LOADER.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/LOADER.KCC')">PLAY!</button></p><hr/>
+<p>LOC.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/LOC.KCC')">PLAY!</button></p><hr/>
+<p>LOC.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/LOC.TAP')">PLAY!</button></p><hr/>
+<p>Logik_Master.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Logik_Master.kcc')">PLAY!</button></p><hr/>
+<p>LPGRAF.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/LPGRAF.KCC')">PLAY!</button></p><hr/>
+<p>Lunar.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Lunar.853')">PLAY!</button></p><hr/>
+<p>MACH1.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MACH1.KCC')">PLAY!</button></p><hr/>
+<p>MACH1.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MACH1.tap')">PLAY!</button></p><hr/>
+<p>MAGIER-4.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MAGIER-4.TAP')">PLAY!</button></p><hr/>
+<p>MANAGER.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MANAGER.SSS')">PLAY!</button></p><hr/>
+<p>MATHEMIK.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MATHEMIK.KCC')">PLAY!</button></p><hr/>
+<p>Max.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Max.853')">PLAY!</button></p><hr/>
+<p>MAXIALL.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MAXIALL.TAP')">PLAY!</button></p><hr/>
+<p>MAXIMALL.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MAXIMALL.KCC')">PLAY!</button></p><hr/>
+<p>MAX.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MAX.KCC')">PLAY!</button></p><hr/>
+<p>MAX.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MAX.tap')">PLAY!</button></p><hr/>
+<p>MAZES.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MAZES.853')">PLAY!</button></p><hr/>
+<p>MAZES.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MAZES.KCC')">PLAY!</button></p><hr/>
+<p>MAZOG.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MAZOG.TAP')">PLAY!</button></p><hr/>
+<p>MC-BASIC.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MC-BASIC.SSS')">PLAY!</button></p><hr/>
+<p>METEOR.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/METEOR.853')">PLAY!</button></p><hr/>
+<p>MINE-II.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MINE-II.tap')">PLAY!</button></p><hr/>
+<p>Mine.sss&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Mine.sss')">PLAY!</button></p><hr/>
+<p>MINESWP.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MINESWP.TAP')">PLAY!</button></p><hr/>
+<p>MINIDAT.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MINIDAT.SSS')">PLAY!</button></p><hr/>
+<p>MINTEX.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MINTEX.SSS')">PLAY!</button></p><hr/>
+<p>MISTER-X.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MISTER-X.TAP')">PLAY!</button></p><hr/>
+<p>MONDLD.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MONDLD.TAP')">PLAY!</button></p><hr/>
+<p>MONSTER.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MONSTER.TAP')">PLAY!</button></p><hr/>
+<p>Moonpatrol.sss&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Moonpatrol.sss')">PLAY!</button></p><hr/>
+<p>MRGLOBE.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MRGLOBE.853')">PLAY!</button></p><hr/>
+<p>MRGLOBE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/MRGLOBE.KCC')">PLAY!</button></p><hr/>
+<p>Netz.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Netz.kcc')">PLAY!</button></p><hr/>
+<p>NUCLEAR2.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/NUCLEAR2.TAP')">PLAY!</button></p><hr/>
+<p>OS+PI.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/OS+PI.KCC')">PLAY!</button></p><hr/>
+<p>PACMAN.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PACMAN.853')">PLAY!</button></p><hr/>
+<p>PACMAN.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PACMAN.KCC')">PLAY!</button></p><hr/>
+<p>PARCOUR.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PARCOUR.853')">PLAY!</button></p><hr/>
+<p>PARCOUR.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PARCOUR.KCC')">PLAY!</button></p><hr/>
+<p>PASCAL1.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PASCAL1.KCC')">PLAY!</button></p><hr/>
+<p>PATIENCE.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PATIENCE.tap')">PLAY!</button></p><hr/>
+<p>PEEPSHOW.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PEEPSHOW.KCC')">PLAY!</button></p><hr/>
+<p>PEGASUS.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PEGASUS.TAP')">PLAY!</button></p><hr/>
+<p>PENGO-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PENGO-3.KCC')">PLAY!</button></p><hr/>
+<p>Pengo_a2.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Pengo_a2.kcc')">PLAY!</button></p><hr/>
+<p>PENGO.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PENGO.KCC')">PLAY!</button></p><hr/>
+<p>PENG.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PENG.TAP')">PLAY!</button></p><hr/>
+<p>PERESTRO.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PERESTRO.KCC')">PLAY!</button></p><hr/>
+<p>PERESTRO.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PERESTRO.TAP')">PLAY!</button></p><hr/>
+<p>PHARAO3.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PHARAO3.853')">PLAY!</button></p><hr/>
+<p>PHARAO+.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PHARAO+.KCC')">PLAY!</button></p><hr/>
+<p>PIANO.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PIANO.KCC')">PLAY!</button></p><hr/>
+<p>PILZE4.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PILZE4.TAP')">PLAY!</button></p><hr/>
+<p>PILZE4.TAP.1&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PILZE4.TAP.1')">PLAY!</button></p><hr/>
+<p>PILZE.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PILZE.853')">PLAY!</button></p><hr/>
+<p>PINGUIN.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PINGUIN.TAP')">PLAY!</button></p><hr/>
+<p>PIPELINE.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PIPELINE.TAP')">PLAY!</button></p><hr/>
+<p>POPEBA.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/POPEBA.SSS')">PLAY!</button></p><hr/>
+<p>POTAS.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/POTAS.SSS')">PLAY!</button></p><hr/>
+<p>Proteus.sss&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Proteus.sss')">PLAY!</button></p><hr/>
+<p>PURSUIT1.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PURSUIT1.KCC')">PLAY!</button></p><hr/>
+<p>PURSUIT.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PURSUIT.853')">PLAY!</button></p><hr/>
+<p>PURSUITJ.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PURSUITJ.TAP')">PLAY!</button></p><hr/>
+<p>PYRAMID1.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PYRAMID1.KCC')">PLAY!</button></p><hr/>
+<p>PYRAMID2.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PYRAMID2.KCC')">PLAY!</button></p><hr/>
+<p>PYRAMIDE.853_mod.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/PYRAMIDE.853_mod.tap')">PLAY!</button></p><hr/>
+<p>Pyramide_v2.0_JB_mod.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Pyramide_v2.0_JB_mod.tap')">PLAY!</button></p><hr/>
+<p>QCLS-DOK.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/QCLS-DOK.SSS')">PLAY!</button></p><hr/>
+<p>QCLS.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/QCLS.SSS')">PLAY!</button></p><hr/>
+<p>RAIL.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/RAIL.TAP')">PLAY!</button></p><hr/>
+<p>RAIMOX.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/RAIMOX.SSS')">PLAY!</button></p><hr/>
+<p>RAKETE.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/RAKETE.TAP')">PLAY!</button></p><hr/>
+<p>RALLYE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/RALLYE.KCC')">PLAY!</button></p><hr/>
+<p>RALLYE.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/RALLYE.tap')">PLAY!</button></p><hr/>
+<p>RANA.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/RANA.TAP')">PLAY!</button></p><hr/>
+<p>RANGER.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/RANGER.SSS')">PLAY!</button></p><hr/>
+<p>RATTE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/RATTE.KCC')">PLAY!</button></p><hr/>
+<p>RATTENJA.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/RATTENJA.KCC')">PLAY!</button></p><hr/>
+<p>RAUPEN.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/RAUPEN.TAP')">PLAY!</button></p><hr/>
+<p>RAUSV1-1.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/RAUSV1-1.KCC')">PLAY!</button></p><hr/>
+<p>RECO88.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/RECO88.KCC')">PLAY!</button></p><hr/>
+<p>REVO.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/REVO.tap')">PLAY!</button></p><hr/>
+<p>ROBOT.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ROBOT.kcc')">PLAY!</button></p><hr/>
+<p>ROMWORD3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ROMWORD3.KCC')">PLAY!</button></p><hr/>
+<p>ROSE.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ROSE.853')">PLAY!</button></p><hr/>
+<p>Rumpelstilzchen.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Rumpelstilzchen.kcc')">PLAY!</button></p><hr/>
+<p>Safari.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Safari.kcc')">PLAY!</button></p><hr/>
+<p>SAHARA.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SAHARA.TAP')">PLAY!</button></p><hr/>
+<p>Satellitenstadt.sss&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Satellitenstadt.sss')">PLAY!</button></p><hr/>
+<p>Schach.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Schach.853')">PLAY!</button></p><hr/>
+<p>SCHACH.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SCHACH.TAP')">PLAY!</button></p><hr/>
+<p>SCHATZ.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SCHATZ.853')">PLAY!</button></p><hr/>
+<p>Schatzsucher.sss&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Schatzsucher.sss')">PLAY!</button></p><hr/>
+<p>Schiessbude_mod.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Schiessbude_mod.tap')">PLAY!</button></p><hr/>
+<p>SCHIESS.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SCHIESS.KCC')">PLAY!</button></p><hr/>
+<p>Schlange.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Schlange.kcc')">PLAY!</button></p><hr/>
+<p>SEAWAR.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SEAWAR.853')">PLAY!</button></p><hr/>
+<p>SEAWAR.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SEAWAR.KCC')">PLAY!</button></p><hr/>
+<p>SEAWAR.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SEAWAR.SSS')">PLAY!</button></p><hr/>
+<p>Seefahrt_mod.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Seefahrt_mod.kcc')">PLAY!</button></p><hr/>
+<p>SERVICE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SERVICE.KCC')">PLAY!</button></p><hr/>
+<p>SKEET.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SKEET.KCC')">PLAY!</button></p><hr/>
+<p>SKEET.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SKEET.TAP')">PLAY!</button></p><hr/>
+<p>SKI4.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SKI4.TAP')">PLAY!</button></p><hr/>
+<p>SKI.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SKI.853')">PLAY!</button></p><hr/>
+<p>Snake.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Snake.kcc')">PLAY!</button></p><hr/>
+<p>SNAKE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SNAKE.KCC')">PLAY!</button></p><hr/>
+<p>SNAKES.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SNAKES.TAP')">PLAY!</button></p><hr/>
+<p>SOKOBAN1.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SOKOBAN1.KCC')">PLAY!</button></p><hr/>
+<p>SOKOBAN2.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SOKOBAN2.KCC')">PLAY!</button></p><hr/>
+<p>SOKOBAN3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SOKOBAN3.KCC')">PLAY!</button></p><hr/>
+<p>sokoban4.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/sokoban4.kcc')">PLAY!</button></p><hr/>
+<p>SONDE.KCB&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SONDE.KCB')">PLAY!</button></p><hr/>
+<p>SOPWITH.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SOPWITH.853')">PLAY!</button></p><hr/>
+<p>SOPWITH.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SOPWITH.KCC')">PLAY!</button></p><hr/>
+<p>SOUNDCOM.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SOUNDCOM.KCC')">PLAY!</button></p><hr/>
+<p>SOUND.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SOUND.KCC')">PLAY!</button></p><hr/>
+<p>SPIELE1.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SPIELE1.KCC')">PLAY!</button></p><hr/>
+<p>SPIELE2.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SPIELE2.KCC')">PLAY!</button></p><hr/>
+<p>SPIELE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SPIELE.KCC')">PLAY!</button></p><hr/>
+<p>SPRITE28.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SPRITE28.SSS')">PLAY!</button></p><hr/>
+<p>STADT2.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/STADT2.853')">PLAY!</button></p><hr/>
+<p>STARTCOM.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/STARTCOM.KCC')">PLAY!</button></p><hr/>
+<p>STERNE-3.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/STERNE-3.SSS')">PLAY!</button></p><hr/>
+<p>Sternenbilder.sss&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Sternenbilder.sss')">PLAY!</button></p><hr/>
+<p>STERNE.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/STERNE.SSS')">PLAY!</button></p><hr/>
+<p>STONES_MOD.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/STONES_MOD.TAP')">PLAY!</button></p><hr/>
+<p>STRIP21A.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/STRIP21A.TAP')">PLAY!</button></p><hr/>
+<p>SUPERLAD.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SUPERLAD.KCC')">PLAY!</button></p><hr/>
+<p>SUPERSKI.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SUPERSKI.853')">PLAY!</button></p><hr/>
+<p>SUPERSKI.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SUPERSKI.KCC')">PLAY!</button></p><hr/>
+<p>SWING.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/SWING.KCC')">PLAY!</button></p><hr/>
+<p>TAKTIK.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TAKTIK.TAP')">PLAY!</button></p><hr/>
+<p>TAPELIST.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TAPELIST.KCC')">PLAY!</button></p><hr/>
+<p>TAPEMA-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TAPEMA-3.KCC')">PLAY!</button></p><hr/>
+<p>TAPEV3-2.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TAPEV3-2.KCC')">PLAY!</button></p><hr/>
+<p>TASTE.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TASTE.KCC')">PLAY!</button></p><hr/>
+<p>TATUM87.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TATUM87.853')">PLAY!</button></p><hr/>
+<p>TATUM.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TATUM.TAP')">PLAY!</button></p><hr/>
+<p>TENNIS.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TENNIS.tap')">PLAY!</button></p><hr/>
+<p>TEST3D.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TEST3D.KCC')">PLAY!</button></p><hr/>
+<p>TESTBILD.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TESTBILD.KCC')">PLAY!</button></p><hr/>
+<p>TETRIS.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TETRIS.KCC')">PLAY!</button></p><hr/>
+<p>TETRIS.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TETRIS.TAP')">PLAY!</button></p><hr/>
+<p>TEUSCH-3.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TEUSCH-3.SSS')">PLAY!</button></p><hr/>
+<p>TEXPRO.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TEXPRO.KCC')">PLAY!</button></p><hr/>
+<p>TEXT+DOK.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TEXT+DOK.KCC')">PLAY!</button></p><hr/>
+<p>TFYA.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TFYA.853')">PLAY!</button></p><hr/>
+<p>TFYA.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TFYA.TAP')">PLAY!</button></p><hr/>
+<p>TRASSE.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TRASSE.TAP')">PLAY!</button></p><hr/>
+<p>TRIAL.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TRIAL.KCC')">PLAY!</button></p><hr/>
+<p>TURBO-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TURBO-3.KCC')">PLAY!</button></p><hr/>
+<p>TURBO3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/TURBO3.KCC')">PLAY!</button></p><hr/>
+<p>UBOOT.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/UBOOT.KCC')">PLAY!</button></p><hr/>
+<p>U-BOOT.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/U-BOOT.TAP')">PLAY!</button></p><hr/>
+<p>UJAGD-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/UJAGD-3.KCC')">PLAY!</button></p><hr/>
+<p>Utopic.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Utopic.kcc')">PLAY!</button></p><hr/>
+<p>V24MOD.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/V24MOD.KCC')">PLAY!</button></p><hr/>
+<p>VOLLGAS.tap&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/VOLLGAS.tap')">PLAY!</button></p><hr/>
+<p>Vorfahrt.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Vorfahrt.kcc')">PLAY!</button></p><hr/>
+<p>VORFAHRT.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/VORFAHRT.KCC')">PLAY!</button></p><hr/>
+<p>VT-DEMO.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/VT-DEMO.KCC')">PLAY!</button></p><hr/>
+<p>VTKCTEXT.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/VTKCTEXT.KCC')">PLAY!</button></p><hr/>
+<p>WAND-3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WAND-3.KCC')">PLAY!</button></p><hr/>
+<p>WAND.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WAND.853')">PLAY!</button></p><hr/>
+<p>WAND.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WAND.KCC')">PLAY!</button></p><hr/>
+<p>WEEPER.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WEEPER.KCC')">PLAY!</button></p><hr/>
+<p>WELTREIS.853&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WELTREIS.853')">PLAY!</button></p><hr/>
+<p>WILLI.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WILLI.KCC')">PLAY!</button></p><hr/>
+<p>WORDPRO3.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WORDPRO3.KCC')">PLAY!</button></p><hr/>
+<p>WORDPRO3.OVR&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WORDPRO3.OVR')">PLAY!</button></p><hr/>
+<p>WPINST.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WPINST.KCC')">PLAY!</button></p><hr/>
+<p>WPRO96.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WPRO96.KCC')">PLAY!</button></p><hr/>
+<p>WPRO97_B.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WPRO97_B.KCC')">PLAY!</button></p><hr/>
+<p>WPRO97.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WPRO97.KCC')">PLAY!</button></p><hr/>
+<p>WUERFEL.KCB&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WUERFEL.KCB')">PLAY!</button></p><hr/>
+<p>Wuestenplanet.kcc&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/Wuestenplanet.kcc')">PLAY!</button></p><hr/>
+<p>WURMI.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WURMI.TAP')">PLAY!</button></p><hr/>
+<p>WURM.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/WURM.KCC')">PLAY!</button></p><hr/>
+<p>XONIX.KCC&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/XONIX.KCC')">PLAY!</button></p><hr/>
+<p>XONIX.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/XONIX.TAP')">PLAY!</button></p><hr/>
+<p>ZAHNARZT.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ZAHNARZT.SSS')">PLAY!</button></p><hr/>
+<p>ZAHN.TAP&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ZAHN.TAP')">PLAY!</button></p><hr/>
+<p>ZEICHGEN.SSS&nbsp;&nbsp;&nbsp;<button onclick="play_file('tapes/ZEICHGEN.SSS')">PLAY!</button></p><hr/>
 
 </body>
 </html>
