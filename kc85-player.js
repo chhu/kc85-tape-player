@@ -7,8 +7,11 @@
 const KC85Config = {
 	default : {
 		zero     : 2400,  // Frequencies
+		zero_amp : 0.33,
 		one      : 1200,
+		one_amp  : 0.66,
 		stop     : 600,
+		stop_amp : 1,
 		first    : 8000,  // N complete "one" waves for first block
 		silence  : 4400,  // silence between blocks in samples (0.1s if sampling rate is 48k)
 		block    : 160,   // N complete "one" waves for each block
@@ -29,9 +32,9 @@ class KC85Player {
 		this.sample_rate = this.ac.sampleRate
 		this.audio = this.ac.createBuffer(1, this.sample_rate * ((raw_data.length / 128) * 1.2 + 10), this.sample_rate)
 		this.duration = this.audio.duration
-		this.one = KC85Player.WaveGen(this.sample_rate, this.config.one)
-		this.zero = KC85Player.WaveGen(this.sample_rate, this.config.zero)
-		this.stop = KC85Player.WaveGen(this.sample_rate, this.config.stop)
+		this.one = KC85Player.WaveGen(this.sample_rate, this.config.one, this.config.one_amp)
+		this.zero = KC85Player.WaveGen(this.sample_rate, this.config.zero, this.config.zero_amp)
+		this.stop = KC85Player.WaveGen(this.sample_rate, this.config.stop, this.config.stop_amp)
 
 		// Generate audio samples
 		this.audio_pos = 0  // within audio
@@ -66,10 +69,10 @@ class KC85Player {
 
 	}
 
-	static WaveGen(sample_rate, frequency) {  // Generates a single wave for given frequency and sr
+	static WaveGen(sample_rate, frequency, amplitude) {  // Generates a single wave for given frequency and sr
 		let result = new Float32Array(Math.round(sample_rate / frequency))
 		for (let i = 0; i < result.length; i++)
-			result[i] = Math.sin((i / result.length) * 2 * Math.PI)
+			result[i] = -Math.sin((i / result.length) * 2 * Math.PI) * amplitude
 		return result
 	}
 
