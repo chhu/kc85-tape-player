@@ -47,6 +47,7 @@ class KC85Player {
 			for (let i = 0; i < this.config.block; i++) 
 				this.add_one()
 			this.add_stop()
+			this.add_stop()
 			let sum = 0
 			this.add_byte((raw_data.length - this.data_pos) <= 128 ? 0xFF : this.block)
 			for (let i = 0; i < 128; i++) {
