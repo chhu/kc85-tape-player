@@ -10,7 +10,7 @@ const KC85Config = {
 		one      : 1200,
 		stop     : 600,
 		first    : 8000,  // N complete "one" waves for first block
-		silence  : 4800,  // silence between blocks in samples (0.1s if sampling rate is 48k)
+		silence  : 4400,  // silence between blocks in samples (0.1s if sampling rate is 48k)
 		block    : 160,   // N complete "one" waves for each block
 	},
 
@@ -46,7 +46,6 @@ class KC85Player {
 			// Prepare complete block
 			for (let i = 0; i < this.config.block; i++) 
 				this.add_one()
-			this.add_stop()
 			this.add_stop()
 			let sum = 0
 			this.add_byte((raw_data.length - this.data_pos) <= 128 ? 0xFF : this.block)
