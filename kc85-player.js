@@ -7,11 +7,11 @@
 const KC85Config = {
 	default : {
 		zero     : 2400,  // Frequencies
-		zero_amp : 0.33,
+		zero_amp : 0.66,
 		one      : 1200,
-		one_amp  : 0.66,
+		one_amp  : 1,
 		stop     : 600,
-		stop_amp : 1,
+		stop_amp : 1.8,
 		first    : 8000,  // N complete "one" waves for first block
 		silence  : 4400,  // silence between blocks in samples (0.1s if sampling rate is 48k)
 		block    : 160,   // N complete "one" waves for each block
