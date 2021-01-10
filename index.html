@@ -28,8 +28,15 @@ function play_file(url) {
         }
         return response.arrayBuffer();
       }).then(function(buffer) {
-		player = new KC85Player(new Uint8Array(buffer))
-		player.play()		
+      	globalBuffer = KC85Player.FixFormat(new Uint8Array(buffer))
+      	globalBufferPlaying = 0
+      	var playNext = function() {
+			player = new KC85Player(globalBuffer[globalBufferPlaying++])
+			player.play()		
+			if (globalBufferPlaying < globalBuffer.length)
+				window.asource.onended = playNext;
+      	}
+      	playNext()
       });
 	//noise = Array.from({length: 1024}, () => Math.floor(Math.random() * 255));
 }

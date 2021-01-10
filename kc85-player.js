@@ -7,11 +7,11 @@
 const KC85Config = {
 	default : {
 		zero     : 2400,  // Frequencies
-		zero_amp : 0.66,
+		zero_amp : 1,
 		one      : 1200,
 		one_amp  : 1,
 		stop     : 600,
-		stop_amp : 1.8,
+		stop_amp : 1,
 		first    : 8000,  // N complete "one" waves for first block
 		silence  : 4400,  // silence between blocks in samples (0.1s if sampling rate is 48k)
 		block    : 160,   // N complete "one" waves for each block
@@ -66,14 +66,50 @@ class KC85Player {
 			if (this.block >= 0xFF)
 				this.block = 1
 		}
-
+		let signal = this.audio.getChannelData(0).slice(0, this.audio_pos)
+		this.audio = this.ac.createBuffer(1, this.audio_pos, this.sample_rate)
+		this.audio.copyToChannel(signal, 0, 0)
 	}
 
 	static WaveGen(sample_rate, frequency, amplitude) {  // Generates a single wave for given frequency and sr
 		let result = new Float32Array(Math.round(sample_rate / frequency))
 		for (let i = 0; i < result.length; i++)
-			result[i] = -Math.sin((i / result.length) * 2 * Math.PI) * amplitude
+			result[i] = i < result.length / 2 ? -amplitude : amplitude;
+//			result[i] = -Math.sin((i / result.length) * 2 * Math.PI) * amplitude
 		return result
+	}
+
+	// Converts uint8 buffer, tries to remove .TAP header(s) and / or split .853 files (returns array of uint8 buffer)
+	// Will not be called by class.
+	static FixFormat(buffer) {
+
+		var kctap_header = [0xC3, 0x4B, 0x43, 0x2D, 0x54, 0x41, 0x50, 0x45, 0x20, 0x62, 0x79, 0x20, 0x41, 0x46, 0x2E, 0x20]
+		var tap_find = function(element, index, array) {
+  			for (let i = 0; i < kctap_header.length; i++)
+  				if (array[index+i] !== kctap_header[i])
+  					return false
+  			return true
+  		}
+  		let pos = buffer.findIndex(tap_find) 
+  		if (pos < 0)
+  			return [buffer]
+  		var result = []
+  		
+  		while (pos >= 0) {
+  			buffer = buffer.slice(pos + 16)
+  			pos = buffer.findIndex(tap_find)
+  			let part = buffer.slice(0, pos < 0 ? undefined : pos)
+  			let part_a = []
+  			// Filter block numbers out
+  			for (let i = 0; i < part.length; i++) {
+  				if (i % 129 == 0)
+  					console.log(part[i] + "> ")
+  				else
+  					part_a.push(part[i])
+  			}
+  			result.push(part_a)
+  		}
+  		return result
 	}
 
 	add_one() {
