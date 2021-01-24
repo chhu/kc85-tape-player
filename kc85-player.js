@@ -6,11 +6,11 @@
 
 const KC85Config = {
 	default : {
-		zero     : 2400,  // Frequencies
+		zero     : 2000,  // Frequencies
 		zero_amp : 1,
-		one      : 1200,
+		one      : 1100,
 		one_amp  : 1,
-		stop     : 600,
+		stop     : 550,
 		stop_amp : 1,
 		first    : 8000,  // N complete "one" waves for first block
 		silence  : 4400,  // silence between blocks in samples (0.1s if sampling rate is 48k)
@@ -73,8 +73,17 @@ class KC85Player {
 
 	static WaveGen(sample_rate, frequency, amplitude) {  // Generates a single wave for given frequency and sr
 		let result = new Float32Array(Math.round(sample_rate / frequency))
-		for (let i = 0; i < result.length; i++)
-			result[i] = i < result.length / 2 ? -amplitude : amplitude;
+		let h = result.length / 2; // half
+		result[0] = result[h] = 0;
+		result[1] = result[h-1] = amplitude * 0.5;
+		result[2] = result[h-2] = amplitude * 1;
+		result[3] = result[h-3] = amplitude * 1.2
+		for (let i = 4; i < h-4; i++)
+			result[i] = amplitude
+		// mirror
+		for (let i = 0; i < h; i++)
+			result[h+i] = -result[h-i]
+
 //			result[i] = -Math.sin((i / result.length) * 2 * Math.PI) * amplitude
 		return result
 	}
